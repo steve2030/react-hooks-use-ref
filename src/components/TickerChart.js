@@ -6,6 +6,7 @@ function Ticker() {
   const [price, setPrice] = useState({ value: 0, ticks: 0 });
   const [color, setColor] = useState("black");
   const prevPrice = useRef(price);
+  // console.log(prevPrice);
   const canvasRef = useRef();
 
   useEffect(() => {
